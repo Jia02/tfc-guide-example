@@ -12,11 +12,11 @@ variable "instance_type" {
 }
 
 variable "instance_name" {
-  description = "jia_EC2 instance"
-  default     = "Provisioned by Terraform"
+  description = "EC2 instance"
+  default     = "Jia-instance"
 }
 
-resource "aws_s3_bucket" "example" {
+resource "aws_s3_bucket" "jiaBucket" {
   bucket = "my-tf-test-bucket"
 
   tags = {
