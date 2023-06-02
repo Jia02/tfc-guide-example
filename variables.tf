@@ -16,3 +16,11 @@ variable "instance_name" {
   default     = "Provisioned by Terraform"
 }
 
+resource "aws_s3_bucket" "example" {
+  bucket = "my-tf-test-bucket"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
