@@ -17,10 +17,10 @@ variable "instance_name" {
 }
 
 resource "aws_s3_bucket" "jiaBucket" {
-  bucket = "my-tf-test-bucket"
+  bucket = "jia-tf-test-bucket"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "jiaBucket1"
     Environment = "Dev"
   }
 }
