@@ -16,11 +16,4 @@ variable "instance_name" {
   default     = "Jia-instance"
 }
 
-resource "aws_s3_bucket" "jiaBucket" {
-  bucket = "jia-tf-test-bucket"
 
-  tags = {
-    Name        = "jiaBucket1"
-    Environment = "Dev"
-  }
-}
